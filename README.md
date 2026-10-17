@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Habibe Çınar — Portfolyo
 
-## Getting Started
+Next.js + Tailwind CSS ile geliştirilmiş, iki dilli (TR/EN) kişisel portfolyo sitesi.
 
-First, run the development server:
+## Çalıştırma
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## İçeriği düzenleme
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Tüm metinler, yetenekler ve projeler tek dosyada: **`src/lib/content.js`**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Yeni proje:** `projects` dizisine bir nesne ekle, açıklamasını `dict.tr.projects.items` ve `dict.en.projects.items` içine aynı `id` ile yaz.
+- **Ekran görüntüsü:** Görseli `public/projects/` klasörüne koy (ör. `kaeya.jpg`) ve projede `image: "/projects/kaeya.jpg"` yaz. Görsel yoksa renkli bir kapak gösterilir.
 
-## Learn More
+## İletişim formu (Formspree, ücretsiz)
 
-To learn more about Next.js, take a look at the following resources:
+1. https://formspree.io adresinde hesap aç → **New Form** oluştur.
+2. Verilen adresteki ID'yi kopyala (`https://formspree.io/f/xyzabcd` → `xyzabcd`).
+3. Proje kökünde `.env.local` dosyası oluştur:
+   ```
+   NEXT_PUBLIC_FORMSPREE_ID=xyzabcd
+   ```
+4. Vercel'de de aynı değişkeni **Settings → Environment Variables** altına ekle.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ID tanımlı değilse form, ziyaretçinin e-posta uygulamasını açar.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Yayınlama (Vercel)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Projeyi GitHub'a yükle (ör. `habibecinar/portfolio`).
+2. https://vercel.com → GitHub ile giriş → **Add New Project** → repoyu seç → **Deploy**.
+3. Birkaç dakika içinde `xxx.vercel.app` adresinde yayında olur. İstersen sonra kendi alan adını bağlayabilirsin.
