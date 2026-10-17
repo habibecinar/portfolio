@@ -26,7 +26,7 @@ export const projects = [
     tech: ["Next.js", "React", "Node.js", "ASP.NET MVC", "Shopier"],
     live: "https://www.kaeyalab.com/",
     github: null, // repo gizli
-    image: null,
+    image: "/projects/kaeyalab.png",
     palette: ["#F1CDBF", "#B5654A"],
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     tech: ["React", "React Hook Form", "Chart.js", "REST API"],
     live: "https://lnkd.in/gRFjbqtA",
     github: "https://github.com/Project-Kodexa/MoneyGuard",
-    image: null,
+    image: "/projects/money.jpeg",
     palette: ["#E8DDF2", "#6B4E8F"],
   },
   {
@@ -46,7 +46,7 @@ export const projects = [
     tech: ["React", "Node.js", "Express", "Mongoose", "CSS Modules"],
     live: "https://taskpro-frontend.onrender.com/",
     github: "https://github.com/TaskHive-TaskPro/TaskPro",
-    image: null,
+    image: "/projects/taskpro.jpeg",
     palette: ["#F6E7C1", "#A47A1E"],
   },
   {
@@ -56,7 +56,7 @@ export const projects = [
     tech: ["JavaScript", "REST API", "DOM"],
     live: "https://cinemania-js-team-d-project.github.io/Cinemania-JS-Team-D/",
     github: "https://github.com/CINEMANIA-JS-TEAM-D-PROJECT/Cinemania-JS-Team-D",
-    image: null,
+    image: "/projects/cinemania.jpeg",
     palette: ["#DCE6F2", "#2E5A87"],
   },
   {
@@ -66,7 +66,7 @@ export const projects = [
     tech: ["HTML", "CSS"],
     live: "https://greenharvest-project.github.io/GreennHarvest/",
     github: "https://github.com/GreenHarvest-Project/GreennHarvest",
-    image: null,
+    image: "/projects/green.jpeg",
     palette: ["#DDEBD9", "#3F7A4A"],
   },
 ];
@@ -92,7 +92,7 @@ export const dict = {
       stats: [
         { value: "5+", label: "Canlı proje" },
         { value: "TR / EN", label: "Dil" },
-        { value: "2024–", label: "Geliştirme" },
+        { value: "2023–", label: "Geliştirme" },
       ],
     },
     projects: {
@@ -144,7 +144,7 @@ export const dict = {
       stats: [
         { value: "5+", label: "Live projects" },
         { value: "TR / EN", label: "Languages" },
-        { value: "2024–", label: "Building" },
+        { value: "2023–", label: "Building" },
       ],
     },
     projects: {
