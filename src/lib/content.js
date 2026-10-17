@@ -56,7 +56,7 @@ export const projects = [
     tech: ["JavaScript", "REST API", "DOM"],
     live: "https://cinemania-js-team-d-project.github.io/Cinemania-JS-Team-D/",
     github: "https://github.com/CINEMANIA-JS-TEAM-D-PROJECT/Cinemania-JS-Team-D",
-    image: "/projects/cinemania.jpeg",
+    image: "/projects/cinemania.png",
     palette: ["#DCE6F2", "#2E5A87"],
   },
   {
