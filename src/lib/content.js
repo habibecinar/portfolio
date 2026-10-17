@@ -26,7 +26,7 @@ export const projects = [
     tech: ["Next.js", "React", "Node.js", "ASP.NET MVC", "Shopier"],
     live: "https://www.kaeyalab.com/",
     github: null, // repo gizli
-    image: "/projects/kaeyalab.png",
+    image: "/projects/kaeya.png",
     palette: ["#F1CDBF", "#B5654A"],
   },
   {
