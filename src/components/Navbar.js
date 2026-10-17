@@ -28,9 +28,12 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <a href="#top" className="text-lg font-bold tracking-tight">
-          HÇ<span className="text-accent">.</span>
-        </a>
+        <a href="#top" className="group flex items-center gap-2.5">
+  <span className="h-2.5 w-2.5 rounded-full bg-accent transition group-hover:scale-125" />
+  <span className="text-base font-medium tracking-tight">
+    Habibe <span className="font-bold">Çınar</span>
+  </span>
+</a>
 
         <div className="hidden items-center gap-8 md:flex">
           {links.map(([href, label]) => (
